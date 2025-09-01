@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/Accessory.css">
+  <title> Accessory</title>
+
+  <!-- Render All Elements Normally -->
+  <link rel="stylesheet" href="css/normalize.css"/>
+  <!-- Font Awesome Library -->
+  <link rel="stylesheet" href="css/all.min.css"/>
+  <!-- Main Template CSS File -->
+  <link rel="stylesheet" href="css/Kasper.css"/>
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- 🔔 شريط الإعلانات العلوي -->
+<div class="top-bar">
+  <div class="top-bar-right">
+    🚚 توصيل سريع &nbsp; | &nbsp; 🎁 إكسسوارات وهدايا فاخرة &nbsp; | &nbsp; 📍 إكسسواراتك عندنا
+  </div>
+</div>
+
+<header class="header">
+  <!-- اللوجو -->
+  <div class="logo">
+    <img src="images/8.webp" alt="شعار الموقع">
+  </div>
+  <!-- الايقونات: الكارت + الهامبرجر -->
+  <div class="icons">
+    <div id="cart-btn">🛒 <span id="cart-count">0</span></div>
+    <div id="hamburger">☰</div>
+  </div>
+
+  <!-- البحث -->
+  <div class="search-box">
+    <input type="text" placeholder="ابحث هنا...">
+    <button>بحث</button>
+  </div>
+</header>
+<!-- ===== Navbar/Hamburger Menu ===== -->
+<nav class="navbar" id="navbar">
+  <ul>
+      <li><a href="#bracelets">أساور</a></li>
+      <li><a href="#rings">خواتم</a></li>
+      <li><a href="#necklaces">عقود</a></li>
+      <li><a href="#mens">إكسسوارات رجالي</a></li>
+      <li><a href="#bestsellers">الأكثر مبيعًا</a></li>
+      <li><a href="#new">وصل حديثًا</a></li>
+      <li><a href="#premium">منتجات فاخرة</a></li>
+  </ul>
+</nav>
+
+ <div class="slider">
+  <div class="slides">
+         <img src="images/13.jpg" alt="صورة 2"> 
+    <img src="images/12.1.jpg" alt="صورة 1" class="active">
+     <img src="images/model-career-kit-still-life2.jpg" alt="صورة 3"> 
+     <img src="images/17.jpg" alt="صورة 4"> 
+  </div> 
+  <!-- الأسهم -->
+  <div class="navigation">
+    <span class="prev">&#10094;</span>
+    <span class="next">&#10095;</span>
+  </div>
+</div>
+<!-- ===== Hamburger Sidebar ===== -->
+<div id="menu" class="cart">
+  <div class="cart-header">
+    <h2>القائمة</h2>
+    <span id="close-menu">&times;</span>
+  </div>
+  <ul class="menu-items">
+<li><a href="#bracelets">أساور</a></li>
+      <li><a href="#rings">خواتم</a></li>
+      <li><a href="#necklaces">عقود</a></li>
+      <li><a href="#mens">إكسسوارات رجالي</a></li>
+      <li><a href="#bestsellers">🔥 الأكثر مبيعًا</a></li>
+      <li><a href="#new">🆕 وصل حديثًا</a></li>
+      <li><a href="#premium">💎 منتجات فاخرة</a></li>
+  </ul>
+</div>
+<!-- Overlay للهامبرجر -->
+<div id="menu-overlay" class="cart-overlay"></div>
+<section class="categories">
+
+<section class="categories">
+  <h2>التصنيفات</h2>
+  <div class="categories-wrapper" id="categories-wrapper">
+    <!-- أساور -->
+    <div class="category-box" id="bracelets">
+      <a href="bracelets.html">
+        <img src="images/15.avif" alt="أساور">
+        <h3>أساور</h3>
+      </a>
+    </div>
+
+    <!-- خواتم -->
+    <div class="category-box" id="rings">
+      <a href="rings.html">
+        <img src="images/4.avif" alt="خواتم">
+        <h3>خواتم</h3>
+      </a>
+    </div>
+
+    <!-- عقود -->
+    <div class="category-box" id="necklaces">
+      <a href="necklaces.html">
+        <img src="images/3.avif" alt="عقود">
+        <h3>عقود</h3>
+      </a>
+    </div>
+
+    <!-- إكسسوارات رجالي -->
+    <div class="category-box" id="mens">
+      <a href="mens.html">
+        <img src="images/ث.jpeg" alt="إكسسوارات رجالي">
+        <h3>إكسسوارات رجالي</h3>
+      </a>
+    </div>
+
+    <!-- الأكثر مبيعًا -->
+    <div class="category-box" id="bestsellers">
+      <a href="bestsellers.html">
+        <img src="images/12.jpg" alt="الأكثر مبيعًا">
+        <h3>🔥 الأكثر مبيعًا</h3>
+      </a>
+    </div>
+
+    <!-- وصل حديثًا -->
+    <div class="category-box" id="new">
+      <a href="new-arrivals.html">
+        <img src="images/13.jpg" alt="وصل حديثًا">
+        <h3>🆕 وصل حديثًا</h3>
+      </a>
+    </div>
+
+    <!-- منتجات فاخرة -->
+    <div class="category-box" id="premium">
+      <a href="premium.html">
+        <img src="images/17.jpg" alt="منتجات فاخرة">
+        <h3>💎 منتجات فاخرة</h3>
+      </a>
+    </div>
+  </div>
+</section>
+<!-- </section> -->
+
+<!-- END CATAGORIES -->
+  <!-- Start Products -->
+     <section id="rings" class="products-container">
+    <div class="product-card" id="cartier-ring">
+      <img src="images/20.jpeg" alt="خاتم كارتير">
+      <h2>خاتم كارتير</h2>
+      <p>تصميم أنيق مستوحى من كارتير</p>
+    </div>
+
+    <div class="product-card" id="chanel-ring">
+      <img src="images/22.jpeg" alt="خاتم شانيل">
+      <h2>خاتم عصري</h2>
+      <p>إطلالة أنثوية راقية</p>
+    </div>
+
+    <div class="product-card" id="lv-ring">
+      <img src="images/18.jpeg" alt="حلق ">
+      <h2>خاتم LV</h2>
+      <p>خاتم عصري مستوحى من LV</p>
+    </div>
+
+    <div class="product-card" id="dior-ring">
+      <img src="images/19.jpeg" alt="خاتم ديور">
+      <h2> خاتم عقله  </h2>
+      <p>فخامة الاستانلس </p>
+    </div>
+  </section> 
+<!-- ⏳ ساعة العروض السحرية -->
+<section class="daily-deal">
+  <h2>⏳ عرض اليوم</h2>
+  <div class="deal-box">
+    <img src="images/4.avif" alt="عرض خاص">
+    <div class="deal-info">
+      <h3>خصم 40% على الخواتم</h3>
+      <p>انتهز الفرصة قبل انتهاء الوقت!</p>
+      <!-- Countdown Timer -->
+      <div id="countdown">
+        <span id="hours">00</span> :
+        <span id="minutes">00</span> :
+        <span id="seconds">00</span>
+      </div>
+      <a href="rings.html" class="btn">تسوق الآن</a>
+    </div>
+  </div>
+</section>
+
+<!-- 🎉 بانر عروض -->
+<section class="offers">
+  <h2>عروضنا المميزة</h2>
+  <div class="offer-box">
+    <img src="images/A.jpeg" alt="خصم">
+    <div class="offer-text">
+      <h3>خصم 30% على الخواتم</h3>
+      <p>العرض ساري حتى نهاية الأسبوع!</p>
+      <a href="rings.html" class="btn">تسوق الآن</a>
+    </div>
+  </div>
+</section>
+</section>
+<!-- 🎬 ستايل Reels -->
+<section class="reels">
+  <h2> منتجاتنا في لمحة</h2>
+  <div class="reels-wrapper">
+    <div class="reel">
+      <video src="videos/3.mp4" autoplay muted loop></video>
+      <p>خواتم استانلس</p>
+    </div>
+     <div class="reel">
+      <video src="videos/8.mp4" autoplay muted loop></video>
+      <p> خاتم دوار</p>
+    </div>
+    <div class="reel">
+      <video src="videos/1.mp4" autoplay muted loop></video>
+      <p>حلق عصري</p>
+    </div>
+     <div class="reel">
+      <video src="videos/3.mp4" autoplay muted loop></video>
+      <p>  مجموعة  استانلس </p>
+    </div>
+     <div class="reel">
+      <video src="videos/5.mp4" autoplay muted loop></video>
+      <p>أساور استانلس</p>
+    </div>
+    <div class="reel">
+      <video src="videos/6.mp4" autoplay muted loop></video>
+      <p> طقم استانلس</p>
+    </div>
+    <div class="reel">
+      <video src="videos/7.mp4" autoplay muted loop></video>
+      <p>حلق عصري</p>
+    </div>
+  </div>
+</section>
+<!-- واتساب -->
+<a href="https://wa.me/201273251442" class="whatsapp-btn" target="_blank">
+  <i class="fab fa-whatsapp"></i>
+</a>
+<!-- نهايه الواتساب -->
+ <!-- 🎁  الهدايا الذكية -->
+<section class="smart-gifts">
+  <h2> هديتك عندنا 🎁</h2>
+  <p>جاوب على سؤال واحد ونرشحلك الهدية المثالية 🎯</p>
+
+  <div class="quiz-box">
+    <h3>بتدور على هدية لمين؟</h3>
+    <div class="quiz-options">
+      <button class="gift-btn" data-type="partner">👩‍❤️‍👨 زوج / خطيبة</button>
+      <button class="gift-btn" data-type="friend">🤝 صديق</button>
+      <button class="gift-btn" data-type="family">👨‍👩‍👧‍👦 أحد أفراد العائلة</button>
+    </div>
+  </div>
+
+  <div id="gift-results" class="gift-results"></div>
+</section>
+
+<!-- 💬 آراء العملاء -->
+<section class="testimonials">
+  <h2>آراء عملائنا</h2>
+  <div class="testimonial-box">
+    <p>"المنتجات رائعة جدًا وخدمة ممتازة 👌"</p>
+    <h4>- سارة محمد</h4>
+  </div>
+  <div class="testimonial-box">
+    <p>"وصلني الطلب بسرعة والجودة أكثر من ممتازة!"</p>
+    <h4>- أحمد علي</h4>
+  </div>
+  <div class="testimonial-box">
+    <p>"أفضل متجر إكسسوارات تعاملت معه ❤️"</p>
+    <h4>- منى محمود</h4>
+  </div>
+    <!-- 🔹 الفوتر -->
+  <footer class="footer">
+    <!-- ✉️ النشرة البريدية -->
+<section class="newsletter">
+  <h2>اشترك ليصلك جديدنا</h2>
+  <form>
+    <input type="email" placeholder="أدخل بريدك الإلكتروني" required>
+    <button type="submit">اشترك</button>
+  </form>
+</section>
+    <div class="footer-container">
+      <div class="footer-logo">
+        <img src="images/8.webp" alt="شعار الموقع">
+        <p>أفضل إكسسوارات بأنسب الأسعار </p>
+      </div>
+
+      <div class="footer-links">
+        <!-- <h4>روابط سريعة</h4> -->
+<ul>
+  <li><a href="bracelets.html">الأساور</a></li>
+  <li><a href="rings.html">الخواتم</a></li>
+  <li><a href="necklaces.html">العقود</a></li>
+  <li><a href="mens.html">إكسسوارات رجالي</a></li>
+</ul>
+
+      </div>
+
+      <div class="footer-social">
+        <h4>تابعنا</h4>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 جميع الحقوق محفوظة لمتجرك</p>
+    </div>
+  </footer>
+
+  <!-- ===== Cart Sidebar ===== -->
+<div id="cart" class="cart">
+  <div class="cart-header">
+    <h2>سلة التسوق</h2> 
+    <span id="close-cart">&times;</span>
+  </div>
+  <div id="cart-items" class="cart-items">
+    <p>لا يوجد منتجات بعد.</p>
+  </div>
+  <div class="cart-footer">
+    <h3>الإجمالي: <span id="cart-total">$0</span></h3>
+    <button id="checkout">الدفع</button>
+  </div>
+</div>
+<!-- ===== Overlay ===== -->
+<div id="cart-overlay" class="cart-overlay"></div>
+  <!-- End Products -->
+   <button id="backToTop">العوده لأعلي</button>
+
+  <script src="js/script.js"></script>
+
+</body>
+</html>

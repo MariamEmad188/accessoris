@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>وصل حديثًا</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/Accessory.css">
+  <link rel="stylesheet" href="css/normalize.css"/>
+  <link rel="stylesheet" href="css/Kasper.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:wght@400;700&family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body dir="rtl">
+
+    <!-- 🔹 الهيدر -->
+  <header class="header">
+   <div class="logo">
+  <a href="Accessory.html">
+    <img src="images/8.webp" alt="شعار الموقع">
+  </a>
+</div>
+
+    <div class="icons">
+      <div id="cart-btn">🛒 <span id="cart-count">0</span></div>
+      <div id="hamburger">☰</div>
+    </div>
+    <div class="search-box">
+      <input type="text" placeholder="ابحث هنا...">
+      <button>بحث</button>
+    </div>
+  </header>
+
+  <!-- 🔹 المينيو -->
+  <div id="menu" class="menu">
+    <button id="close-menu">×</button>
+    <ul>
+      <li><a href="index.html">الرئيسية</a></li>
+      <li><a href="bracelets.html">الأساور</a></li>
+      <li><a href="rings.html">الخواتم</a></li>
+      <li><a href="earrings.html">الحلقان</a></li>
+      <li><a href="new-arrivals.html">وصل حديثًا</a></li>
+    </ul>
+  </div>
+  <div id="menu-overlay" class="overlay"></div>
+
+  <!-- 🔹 المنتجات -->
+  <section class="products-container">
+    <!-- <h2>وصل حديثًا</h2> -->
+    <div class="product-card" id="na1">
+      <img src="images/A.jpeg" alt="الأساور وصل حديثًا">
+      <h3>اساور جديدة</h3>
+      <p>تصميم عصري وأنيق</p>
+      <span class="price">$130</span>
+      <button class="add-to-cart">إضافة إلى السلة</button>
+    </div>
+
+    <div class="product-card" id="na2">
+      <img src="images/18.jpeg" alt="خاتم وصل حديثًا">
+      <h3>خاتم أنيق</h3>
+      <p>خاتم حريمي عصري</p>
+      <span class="price">$95</span>
+      <button class="add-to-cart">إضافة إلى السلة</button>
+    </div>
+    <div class="product-card" id="na4">
+      <img src="images/ss.jpg" alt="سوار جديد وصل حديثًا">
+      <h3>سوار فاخر</h3>
+      <p>تصميم استانلس أنيق</p>
+      <span class="price">$85</span>
+      <button class="add-to-cart">إضافة إلى السلة</button>
+    </div>
+
+    <div class="product-card" id="na5">
+      <img src="images/ث.jpeg" alt="خاتم جديد وصل حديثًا">
+      <h3>خاتم فضة</h3>
+      <p>خاتم فاخر للرجال</p>
+      <span class="price">$100</span>
+      <button class="add-to-cart">إضافة إلى السلة</button>
+    </div>
+
+    <div class="product-card" id="na6">
+      <img src="images/ر.jpeg" alt="ساعه جديدة وصل حديثًا">
+      <h3>ساعه فضه</h3>
+      <p>  ساعه ومميزة</p>
+      <span class="price">$105</span>
+      <button class="add-to-cart">إضافة إلى السلة</button>
+    </div>
+  </section>
+
+  <!-- 🔹 الفوتر -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-logo">
+        <img src="images/8.webp" alt="شعار الموقع">
+        <p>وصل حديثًا بأحدث صيحات الموضة</p>
+      </div>
+
+      <div class="footer-links">
+        <ul>
+          <li><a href="bracelets.html">الأساور</a></li>
+          <li><a href="rings.html">الخواتم</a></li>
+          <li><a href="necklaces.html">العقود</a></li>
+          <li><a href="new-arrivals.html">وصل حديثًا</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-social">
+        <h4>تابعنا</h4>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 جميع الحقوق محفوظة لمتجرك</p>
+    </div>
+  </footer>
+
+  <!-- ===== Cart Sidebar ===== -->
+<div id="cart" class="cart">
+  <div class="cart-header">
+    <h2>سلة التسوق</h2> 
+    <span id="close-cart">&times;</span>
+  </div>
+  <div id="cart-items" class="cart-items">
+    <p>لا يوجد منتجات بعد.</p>
+  </div>
+  <div class="cart-footer">
+    <h3>الإجمالي: <span id="cart-total">$0</span></h3>
+    <button id="checkout">الدفع</button>
+  </div>
+</div>
+<div id="cart-overlay" class="cart-overlay"></div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
