@@ -254,7 +254,7 @@ ul {
 }
 /* categories */
 .categories {
-  padding: 20px;
+  padding: 10px;
   overflow: hidden;
   direction: rtl; /* علشان يبقى السحب من اليمين للشمال طبيعي */
 }
@@ -1113,4 +1113,5 @@ ul {
   background: #444;
 }
 /* نهاديه زرار العوده لاعلي  */
+
 
