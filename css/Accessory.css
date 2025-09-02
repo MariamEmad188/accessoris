@@ -735,7 +735,48 @@ ul {
 .product-card .add-to-cart:hover {
   background: rgba(213,138,57,1);
 } 
+.products-container {
+  display: flex;
+  gap: 12px;               /* مسافة أصغر بين الكروت */
+  overflow-x: auto;        /* يسمح بالاسكرول يمين وشمال */
+  scroll-behavior: smooth; /* حركة ناعمة */
+  padding: 8px;
+  white-space: nowrap;     /* منع نزول العناصر تحت بعض */
 
+  /* إخفاء scrollbar */
+  scrollbar-width: none;   /* Firefox */
+}
+
+.products-container::-webkit-scrollbar {
+  display: none;           /* Chrome, Safari, Opera */
+}
+/* شكل الكروت */
+.products-container .product-card {
+  flex: 0 0 auto;          /* يخلي الكارت ثابت العرض */
+  width: 180px;            /* أصغر من 200px */
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 8px;            /* أقل من 10px */
+  background: #fff;
+  text-align: center;
+  font-size: 14px;         /* أصغر شويه الخطوط داخل الكارت */
+}
+
+.products-container .product-card img {
+  height: 140px;           /* أقل من 200px */
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.products-container .product-card h2 {
+  font-size: 16px;         /* أصغر شويه */
+  margin: 10px 0 4px;
+}
+
+.products-container .product-card p {
+  font-size: 12px;
+  margin-bottom: 8px;
+}
 /* ===== Responsive ===== */
  @media (max-width: 992px) {
   .landing .text { width: 70%; padding: 30px; }
@@ -1072,3 +1113,4 @@ ul {
   background: #444;
 }
 /* نهاديه زرار العوده لاعلي  */
+
